@@ -65,11 +65,16 @@
         background: var(--mainblue);
     
         }
+
+
         .aa_qabigbox{
             margin-top: 50px;
+            height: 1000px;
+            border: 1px solid red;
         }
         .aa_qabox1{
             height: 100px;
+            
             width: 1032px;;
             background-color: rgb(255, 255, 255);
             margin: 0 auto;
@@ -83,5 +88,46 @@
          line-height: 12vh;
         }
         
+
+
+        /*下拉內頁 */
+        .wrapper {
+            width: 100%;
+        }
+    
+
+    .panel-heading {
+        padding: 0;
+        border: 0;
+    }
+
+
+    .panel-title>a,
+    .panel-title>a:active {
+        display: block;
+        padding: 15px;
+        color: #555;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        text-decoration: none;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .panel-heading a:before {
+        font-family: 'Glyphicons Halflings';
+        content: "\e114";
+        float: right;
+        transition: all 0.5s;
+    }
+
+    .panel-heading.active a:before {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 
 }

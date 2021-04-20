@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index/mobile/style.css">
-    <link rel="stylesheet" href="./css/index/web/style.css">
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
     <link rel="stylesheet" href="./css/QA/web/style.css">
     <link rel="stylesheet" href="./css/QA/mobile/style.css">
+    <link rel="stylesheet" href="./css/walkingservice/mobile/style.css">
+    <link rel="stylesheet" href="./css/walkingservice/web/style.css">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
@@ -746,6 +747,7 @@
 
 
 
+
     <!-- Q&A -->
     <div class="aa_navbar_box"></div>
     <div class="aa_qatitlebox">
@@ -763,40 +765,96 @@
                     <p class="aa_qtext">1.會員問題?</p>
 
 
-
-
-
-
-
-                    <div class="panel-group">
-                        <div class="panel panel-default">
-                            <div class="panel-heading product_wrapAll">
-
-                                <div class="panel-title">
-                                    <a data-toggle="collapse" href="#collapse2">
-                                        <div class="product_text_wrap">
-                                            預約住宿
-                                            <svg class="icon-keyboard_arrow_down">
-                                                <use
-                                                    xlink:href="./images/index/icomoon/symbol-defs.svg#icon-keyboard_arrow_down">
-                                                </use>
-                                            </svg>
-                                            <div class="menuEngSubtitle">Booking</div>
-                                        </div>
-                                    </a>
+                    <div class="wrapper center-block">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading active" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            1.會員問題?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid.
+                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                        quinoa nesciunt
+                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                        single-origin
+                                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes
+                                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                        lomo. Leggings
+                                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                        probably haven't heard
+                                        of them accusamus labore sustainable VHS.
+                                    </div>
                                 </div>
                             </div>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">一、捐贈的發票，你們會怎麼處理?
-                                    答：根據財政部令 台財資字第 1070001765 號
-                                    「電子發票實施作業要點」第二十二條說明，財政部電子發票整合平台應每二月為一期，於開獎日前，將買受人所捐贈之該期電子發票明細資料通知各該受捐贈機構，並由財政部電子發票整合平台於對獎後，通知受捐贈機構領獎。另，依據法令規定，已捐贈的發票無法索取紙本發票及更改捐贈對象，如有退換貨需求，本公司將會將該發票作廢。業；未歸戶的中獎發票，將由本網站以電子郵件、推播及簡訊通知您領獎相關通知及作業。(電子發票及會員載具歸戶說明，
-                                    詳見財政部電子發票整合平台 https://www.einvoice.nat.gov.tw/)
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </h4>
                                 </div>
-
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid.
+                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                        quinoa nesciunt
+                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                        single-origin
+                                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes
+                                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                        lomo. Leggings
+                                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                        probably haven't heard
+                                        of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid.
+                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                        quinoa nesciunt
+                                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                        single-origin
+                                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes
+                                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                                        lomo. Leggings
+                                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                                        probably haven't heard
+                                        of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
 
 
 
@@ -818,32 +876,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <a href="#" id="gotop" style="text-decoration: none;">
         TOP
     </a>
@@ -852,6 +884,28 @@
     <a href="#" id="gotop2" style="text-decoration: none;">
         TOP
     </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -926,7 +980,7 @@
     </div>
 
 
-    <div class="footer2 fixed-bottom">
+    <div class="footer2 ">
 
         <div class="footerBox1">
             <div class="buy2">購買資訊</div>
@@ -974,16 +1028,16 @@
     <!-- navbar website -->
 
 
-    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
         </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-        </script>
-    <script src="./js/index/mobile/custom.js"></script>
-    <script src="./js/index/web/custom.js"></script>
+
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+
+    <script src="./js/0_main/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
