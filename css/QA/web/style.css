@@ -10,9 +10,7 @@
 
   @media only screen and (min-width: 1128px) {
 
-*{
-    border: 1px red solid;
-}
+
 
 
 .aa_navbar_box{
@@ -71,7 +69,7 @@
         .aa_qabigbox{
             margin-top: 50px;
             
-            border: 1px solid red;
+            
         }
         .aa_qabox1{
             height: 100px;
@@ -92,52 +90,129 @@
 
 
         /*下拉內頁 */
-        .wrapper {
-            width: 100%;
-        }
-    
-
-    .panel-heading {
-        padding: 0;
-        border: 0;
-    }
-
-
-    .panel-title>a,
-    .panel-title>a:active {
-        display: block;
-        padding: 15px;
-        color: #555;
-        line-height: 5vh;
-        font-size: 22px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        word-spacing: 3px;
-        text-decoration: none;
-        height: 70px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 10px;
-        margin-top:50px ;
-    }
-
-    .panel-heading a:before {
-        font-family: 'Glyphicons Halflings';
-        content: "\e114";
-        float: right;
-        transition: all 0.5s;
-        content: "♥";
-   
-    }
-
-    .panel-heading.active a:before {
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        transform: rotate(180deg);
-        content: "♥";
-     
-    }
  
+
+      .container {
+        max-width: 960px;
+      }
+      
+      .panel-default>.panel-heading {
+        color: #333;
+        background-color: #fff;
+        border-color: #e4e5e7;
+        padding: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius:10px ;
+      }
+      
+      .panel-default>.panel-heading a {
+        display: block;
+        padding: 10px 15px;
+        height: 70px;
+        margin-top: 50px;
+        color: #707070;
+        line-height: 6vh;
+        text-decoration:none;
+       
+      }
+      .panel-body{
+          background-color: #fff;
+          padding: 40px;
+        
+      }
+      .panel-default>.panel-heading a:after {
+        
+        content: "";
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+      
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        float: right;
+        transition: transform .25s linear;
+        -webkit-transition: -webkit-transform .25s linear;
+      }
+      
+      .panel-default>.panel-heading a[aria-expanded="true"] {
+        background-color: #F9DD83;
+        border-radius:10px ;
+      }
+      
+      .panel-default>.panel-heading a[aria-expanded="true"]:after {
+        content: "\2212";
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      
+      .panel-default>.panel-heading a[aria-expanded="false"]:after {
+        content: "\002b";
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      
+      .accordion-option {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin: 15px 0;
+      }
+      
+      .accordion-option .title {
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .accordion-option .toggle-accordion {
+        float: right;
+        font-size: 16px;
+        color: #6a6c6f;
+      }
+      
+      .accordion-option .toggle-accordion:before {
+        content: "Expand All";
+      }
+      
+      .accordion-option .toggle-accordion.active:before {
+        content: "Collapse All";
+      }
+
+/* 聯絡我們 */
+.aa_callme{
+   
+    width: 100%;
+    margin-top: 60px;
+}
+.aa_callme_title{
+    font-size: 30px;
+    margin: 0 auto;
+    width: fit-content;
+}
+.aa_callme_line{
+    width: 750px;
+    height: 20px;
+    margin: 0 auto;
+    border-bottom: solid 1px#707070 ;
+    
+}
+
+.aa_callme_text{
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 30px;
+line-height: 4vh;
+margin-bottom: 50px;
+
+}
 
 
 }
