@@ -90,6 +90,8 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
+        width:95%;
+        margin: 0 auto;
         user-select: none;
         border-radius:8px ;
       }
@@ -109,8 +111,8 @@
           background-color: #fff;
           padding: 20px;
           font-size: 12px;
-          margin: 0;
-        
+          margin: 0 auto;
+        width: 95%;
       }
       .panel-default>.panel-heading a:after {
         
