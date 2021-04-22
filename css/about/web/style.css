@@ -57,7 +57,7 @@ color: #707070;
 }
 
 .aa_about_text1{
-  float: left;
+  float: right;
 
 }
 
@@ -87,7 +87,7 @@ color: #707070;
 }
 
 .aa_about_img1{
-  float: left;
+  float: right;
 
 }
 
@@ -137,21 +137,21 @@ color: #707070;
  
 
     width: 950px;
-    height: auto;
+    height: 380px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 160px;
   
   }
   
   .aa_about_text2{
-    float: right;
+    float: left;
   
   }
 
  
 
   .aa_about_img2{
-  
+    float: left;
     padding: 0;
 
   }
@@ -168,17 +168,17 @@ color: #707070;
     width: 950px;
     height: 320px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 160px;
   }
   
   .aa_about_text3{
-    float: left;
+    float: right;
  
   }
   
   
   .aa_about_img3{
-    float: left;
+    float: right;
     margin-top: 2px;
     padding: 0;
   
@@ -196,15 +196,15 @@ color: #707070;
 .aa_about_box4{
  
     width: 950px;
-    height: auto;
+    height: 380px;
     margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom:150px;
+    margin-top: 160px;
+    margin-bottom:160px;
 
   }
   
   .aa_about_text4{
-    float: right;
+    float: left;
  
   }
   .aa_about_text4_text{
@@ -242,6 +242,7 @@ color: #707070;
   
   .aa_about_img4{
     padding: 0;
+    float: left;
 
   }
   .aa_about_img4_logo{

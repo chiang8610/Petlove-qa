@@ -204,7 +204,27 @@ line-height: 4vh;
 margin-bottom: 50px;
 font-size: 12px;
 
-}
 
+
+
+}
+.aa_qa_btu_box{
+  font-size: 14px;
+  
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  
+  }
+  .aa_qa_btu_box_btu{
+ 
+  color: #ffffff;
+  width: 110px;
+  height: 38px;
+  border-radius: 30px;
+  background-color: #89A7C2;
+  border: 0;
+  }
 
 }

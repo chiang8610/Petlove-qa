@@ -1,0 +1,58 @@
+:root {
+    --mainblue: #89A7C2;
+    --mainpink: #FF9A9A;
+    --mainyellow: #F9DD83;
+    --maingray: #CCCCCC;
+    --maindarkgray: #707070;
+  
+  }
+
+
+  @media only screen and (min-width: 1128px) {
+
+*{
+    border: 1px red solid !important;
+}
+
+.aa_navbar_box{
+    width: 100px;
+    height: 70px;
+}
+
+
+.aa_productdetail_box1{
+    width: 100%;
+    height: 1000px;
+}
+.aa_productdetail_box1_img{
+    width: fit-content;
+    float: left;
+}
+
+.aa_productdetail_box1_img_sm{
+    width: 150px;
+    float: left;
+    
+    
+}
+.aa_productdetail_box1_img_big{
+    float: left;
+   
+}
+.aa_productdetail_box1_img_smimg1{
+width: 115px;
+}
+.aa_productdetail_box1_img_smimg2{
+    width: 115px;
+}
+
+
+.aa_productdetail_box1_img_text{
+    float: right;
+    width: 200px;
+    height: 500px;
+    background-color: royalblue;
+}
+
+
+  }

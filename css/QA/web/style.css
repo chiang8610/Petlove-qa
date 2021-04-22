@@ -214,5 +214,25 @@ margin-bottom: 50px;
 
 }
 
+.aa_qa_btu_box{
+
+  font-size: 20px;
+  margin: 0 auto;
+
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.aa_qa_btu_box_btu{
+  color: #ffffff;
+  width: 125px;
+  height: 46px;
+  border-radius: 30px;
+  background-color: #89A7C2;
+  border: 0;
+}
+
+
 
 }
