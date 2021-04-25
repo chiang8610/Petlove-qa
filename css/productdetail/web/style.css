@@ -10,9 +10,10 @@
 
   @media only screen and (min-width: 1128px) {
 
-/* *{
+*{
     border: 1px red solid !important;
-} */
+}
+
 
 .aa_navbar_box{
     width: 100px;
@@ -23,38 +24,38 @@
 .aa_productdetail_box1{
     
     width: 1389px;
-    height: 1000px;
+    height: 614px;
     margin: 0 auto;
     margin-top: 100px;
 }
-.aa_productdetail_box1_img{
+.aa_productdetail_box1_img-web{
     
     float: left;
 }
 
-.aa_productdetail_box1_img_sm{
+.aa_productdetail_box1_img_sm-web{
     width: 115px;
     float: left;
     
     
 }
-.aa_productdetail_box1_img_big{
+.aa_productdetail_box1_img_big-web{
     float: left;
     margin-left: 40px;
     
    
 }
 
-.aa_productdetail_box1_img_bigimg{
+.aa_productdetail_box1_img_bigimg-web{
     border-radius: 5px;
 }
-.aa_productdetail_box1_img_smimg1{
+.aa_productdetail_box1_img_smimg1-web{
 width: 100%;
 border: 3px solid #CCCCCC;
 border-radius: 8px;
 margin-bottom: 18px;
 }
-.aa_productdetail_box1_img_smimg2{
+.aa_productdetail_box1_img_smimg2-web{
     width: 100%;
 }
 
@@ -82,6 +83,7 @@ margin-bottom: 18px;
    float: left;
  margin-top: 3px;
  margin-right: 5px;
+ fill: #F9DD83;
 }
 
 .aa_productdetail_box1_text_appraise{
@@ -181,23 +183,265 @@ color: var(--maindarkgray);
    letter-spacing:2px;border: 0;
    
 }
+/* 第二區 */
+.aa_productdetail_box2{
+    
+        width: 1389px;
+        height: 8000px;
+        margin: 0 auto;
+        margin-top: 105px;
+    
+    
+    
+}
+
+.aa_productdetail_box2_top_select_box{
+    width: 1324px;
+    margin: 0 auto;
+    
+   
+}
+.aa_productdetail_box2_top_select_boxtext{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+
+.aa_productdetail_box2_top_select_line{
+    width: 100%;
+   
+    height: 25px;
+  border-bottom: solid 2px var(--maingray);
+}
 
 
 
 
+/* 到時候和再一起會重複??? */
+    a:link {
+        color: var(--maindarkgray);
+        }
+        a:visited {
+            color: var(--maindarkgray);
+        }
+        a:hover {
+            color: var(--maindarkgray);
+           
+        }
+        a:active {
+            color: var(--maindarkgray);
+            border-bottom: var(--mainyellow) 7px solid;
+        }
 
 
 
+ .aa_productdetail_box2_top_detailed_box{
+            width: 100%;
+            margin-top: 75px;
+            margin-bottom: 245px;
+        }
+       
+
+.aa_productdetail_box2_top_detailed_tiite{
+    font-size: 30px;
+    margin: 0 auto;
+    width: fit-content;
+    
+    border-bottom: 7px solid var(--mainblue);
+}
+.aa_productdetail_box2_top_detailed_boxtext{
+    padding-left: 40px;
+    width: 100%;
+    height: 1270px;
+    margin-top: 100px;
+  
+   
+    
+  
+    
+}
+
+.aa_productdetail_box2_top_detailed_left{
+    float: left;
+    
+ }
+ 
+ .aa_productdetail_box2_top_detailed_right{
+    margin-right: 40px;
+ float: right;
+ }
+
+.aa_productdetail_box2_top_detailed_leftbox1_boldtext{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 78px;
+
+}
+
+.aa_productdetail_box2_top_detailed_pinktext{
+    color: var(--mainpink);
+    font-size:20px ;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.aa_productdetail_box2_top_detailed_text{
+    font-size: 16px;
+    color: var(--maindarkgray);
+    line-height: 25px;
+
+}
+
+
+.aa_productdetail_box2_top_detailed_leftbox1{
+    width: 490px;
+}
+
+.aa_productdetail_box2_top_detailed_leftbox2{
+    width: 490px;
+    margin-top: 110px;
+}
+
+.aa_productdetail_box2_top_detailed_leftbox3{
+    width: 490px;
+    margin-top: 110px;
+}
+
+.aa_productdetail_box2_top_detailed_leftbox4{
+    width: 490px;
+    margin-top: 110px;
+}
+
+.aa_productdetail_box2_top_detailed_ingredient{
+    float: left;
+    margin-right: 70px;
+}
+
+.aa_productdetail_box2_top_detailed_rightimgbox{
+    width: 635px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--maindarkgray);
+  
+
+}
+
+.aa_productdetail_box2_top_detailed_rightimg{
+    width: 400px;
+    height: 400px;
+   
+}
+
+.aa_productdetail_box2_top_detailed_rightlogo-web{
+    width: 490px;
+    margin-top: 50px; 
+}
 
 
 
+.aa_productdetail_box2_top_detailed_rightbox1{
+    width: 490px;
+    margin-top: 110px; 
+}
+
+.aa_productdetail_box2_top_detailed_rightbox2{
+    width: 550px;
+    margin-top: 110px; 
+}
+
+.aa_productdetail_box2_top_detailed_text.logo1-web{
+    margin-bottom: 20px;
+}
+
+.aa_productdetail_box2_top_detailed_text .img{
+    float: left;
+    width: 500px;
+    
+}
+.aa_productdetail_box2_top_detailed_textlogo2img-web{
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.aa_productdetail_box2_top_detailed_textlogo1img-web{
+
+    margin-right: 20px;
+}
+
+.aa_productdetail_box2_top_detailed_boximg{
+   
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 225px;
+}
 
 
+.aa_productdetail_box2_top_detailed_rightlogo_mobile{
+    display: none;
+}
+
+.aa_productdetail_box2_feeding_tiite{
+    font-size: 30px;
+    margin: 0 auto;
+    width: fit-content;
+    
+    border-bottom: 7px solid var(--mainblue);
+    margin-bottom: 55px;
+   
+}
+
+.aa_productdetail_box2_feeding_tiite_pink{
+    color: var(--mainpink);
+    font-size:20px ;
+    font-weight: bold;
+width: fit-content;
+    margin: 0 auto;
+}
 
 
+.aa_productdetail_box2_feeding_table{
+ margin: 0 auto;
+ text-align:center;
+ color: #464646;
+ margin-top:53px ;
+ 
+}
+
+.aa_productdetail_box2_feeding_table tr{
+    height: 50px;
+  
+ 
+}
+
+.aa_productdetail_box2_feeding_table td{
+    width: 350px;
+    vertical-align:middle ;
+    margin: 0 auto;
+    
+}
 
 
+.aa_darkgray{
+    background-color: var(--maindarkgray);
+    color: #ffffff;
+}
+
+
+.aa_lightgray{
+    background-color: #CCCCCC;
+}
+
+.aa_white{
+   
+    background-color:#EFEFEF ;
+}
 
 
 
   }
+
+
+
