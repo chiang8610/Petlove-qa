@@ -18,16 +18,19 @@
       width: 100px;
       height: 70px;
   }
-
   .aa_about_titile{
+    width: fit-content;
+    
+        
+          margin: 0 auto;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+    
+        .aa_about_titile_web{
+          display: none;
+        }
 
-    width: 235px;
-    height: 55px;
-    margin: 0 auto;
-    background-color: #FF9A9A;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
 
 .aa_about_bigbox{
 

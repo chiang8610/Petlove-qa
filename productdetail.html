@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/productdetail/web/style.css">
     <link rel="stylesheet" href="./css/productdetail/mobile/style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
@@ -761,13 +762,59 @@
             </div>
             <div class="aa_productdetail_box1_img_big-web">
                 <img class="aa_productdetail_box1_img_bigimg-web" src="./images/productdetail/1.png" alt="">
+
             </div>
 
         </div>
         <!-- 手機板的圖 -->
+        <div class="aa_productdetail_box1_img_mobile">
+            <div class="container">
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/productdetail/1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/productdetail/1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/productdetail/1.png" class="d-block w-100" alt="...">
+                            </div>
+
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
 
 
 
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
 
         <div class="aa_productdetail_box1_text">
             <!-- 產品名 -->
@@ -814,7 +861,31 @@
             <!-- 數量選擇 -->
             <div class="aa_productdetail_box1_text_countbox">
                 <div class="aa_productdetail_box1_text_count">數量</div>
-                <div class="aa_productdetail_box1_text_updown"></div>
+
+                <!-- 沒改名子有機會重複 -->
+                <div class="aa_productdetail_box1_text_updown">
+
+
+                    <form id='myform' method='POST' action='#'>
+                        <label for=""></label><input type='button' value='-' class='qtyminus' field='quantity' />
+
+                        <input type='text' name='quantity' value='0' class='qty' />
+
+                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
                 <div class="aa_productdetail_box1_text_btn">
                     <button class="aa_productdetail_box1_text_btnJoin">加入購物車</button>
 
@@ -828,6 +899,10 @@
 
 
 
+
+
+
+
     <!-- 下半部介紹 -->
     <div class="aa_productdetail_box2">
 
@@ -835,13 +910,13 @@
 
         <div class="aa_productdetail_box2_top_select_box">
             <div class="aa_productdetail_box2_top_select_boxtext">
-                <a class="aa_productdetail_box2_top_select1" style="text-decoration:none;" href="">商品描述</a>
+                <div class="aa_productdetail_box2_top_select1" style="text-decoration:none;" href="">商品描述</div>
 
 
-                <a class="aa_productdetail_box2_top_select2" style="text-decoration:none;" href="">餵食指南</a>
+                <div class="aa_productdetail_box2_top_select2" style="text-decoration:none;" href="">餵食指南</div>
 
 
-                <a class="aa_productdetail_box2_top_select3" style="text-decoration:none;" href="">顧客評價</a>
+                <div class="aa_productdetail_box2_top_select3" style="text-decoration:none;" href="">顧客評價</div>
             </div>
             <div class="aa_productdetail_box2_top_select_line"></div>
         </div>
@@ -860,14 +935,20 @@
 
 
 
-
-                            商品介紹</div>
+                            <img src="./images/productdetail/pinkicon1.svg" alt="">
+                            商品介紹
+                        </div>
                         <div class="aa_productdetail_box2_top_detailed_text">
                             貓咪健康的膀胱來自關鍵營養的均衡，過量的礦物質容易在尿液中產生尿結晶，有時更會造成膀胱尿結石。<br><br>由希爾思營養專家及獸醫師群研製，幫助管理貓咪泌尿道健康。均衡的關鍵營養，即能幫助改善貓下泌尿道問題。適合長期餵食，減少尿結石徵狀復發。
                         </div>
                     </div>
                     <div class="aa_productdetail_box2_top_detailed_leftbox2">
-                        <div class="aa_productdetail_box2_top_detailed_pinktext">商品特色</div>
+                        <div class="aa_productdetail_box2_top_detailed_pinktext">
+
+                            <img src="./images/productdetail/pinkicon2.svg" alt="">
+
+                            商品特色
+                        </div>
                         <div class="aa_productdetail_box2_top_detailed_text">
                             ‧促進理想的尿液pH值<br>
                             ‧最快7天溶解磷酸銨鎂結石 (平均27天)<br>
@@ -875,14 +956,22 @@
                             ‧可建議成貓長期餵飼</div>
                     </div>
                     <div class="aa_productdetail_box2_top_detailed_leftbox3">
-                        <div class="aa_productdetail_box2_top_detailed_pinktext">商品規格</div>
+                        <div class="aa_productdetail_box2_top_detailed_pinktext">
+
+                            <img src="./images/productdetail/pinkicon3.svg" alt="">
+                            商品規格
+                        </div>
                         <div class="aa_productdetail_box2_top_detailed_text">
                             重量:8.5磅/3.85kg<br>
                             產地:美國
                         </div>
                     </div>
                     <div class="aa_productdetail_box2_top_detailed_leftbox4">
-                        <div class="aa_productdetail_box2_top_detailed_pinktext">營養成分</div>
+                        <div class="aa_productdetail_box2_top_detailed_pinktext">
+                            <img src="./images/productdetail/pinkicon4.svg" alt="">
+
+                            營養成分
+                        </div>
                         <div class="aa_productdetail_box2_top_detailed_text">
                             <div class="aa_productdetail_box2_top_detailed_ingredient">
                                 蛋白質<br>
@@ -934,12 +1023,22 @@
                     </div>
 
                     <div class="aa_productdetail_box2_top_detailed_rightbox1">
-                        <div class="aa_productdetail_box2_top_detailed_pinktext">附加資訊</div>
+                        <div class="aa_productdetail_box2_top_detailed_pinktext">
+                            <img src="./images/productdetail/pinkicon5.svg" alt="">
+
+
+                            附加資訊
+                        </div>
                         <div class="aa_productdetail_box2_top_detailed_text">*商品療效及使用說明,請參照希爾思寵物食品官網<br>
                             *請諮詢獸醫師以了解希爾思®處方食品</div>
                     </div>
                     <div class="aa_productdetail_box2_top_detailed_rightbox2">
-                        <div class="aa_productdetail_box2_top_detailed_pinktext">商品成分</div>
+                        <div class="aa_productdetail_box2_top_detailed_pinktext">
+                            <img src="./images/productdetail/pinkicon6.svg" alt="">
+
+
+                            商品成分
+                        </div>
                         <div class="aa_productdetail_box2_top_detailed_text">
                             雞肉、全穀粒玉米、玉米筋質粉、全穀粒小麥、釀造米、豬肉脂肪、雞肉粉、乾燥蛋製品、豬肉香料、黃豆油、魚油、乳酸左旋離胺酸、硫酸鈣、氯化鉀、氯化膽鹼、DL-蛋胺酸、檸檬酸鉀、維生素、菸鹼酸添加劑、維生素B1、泛酸鈣、維生素B6、維生素A添加劑、核黃素添加劑、生物素、維生素B12添加劑、葉酸、維生素D3添加劑)、牛磺酸、礦物質
                             (硫酸亞鐵、氧化鋅、硫酸銅、氧化錳、碘酸鈣、亞硒酸鈉)、碘鹽、添加綜合維生素E類以保鮮、天然香料、β-胡蘿蔔素/div>
@@ -972,8 +1071,9 @@
 
         <!-- 餵食指南 -->
 
-        <div class="aa_productdetail_box2_feeding_box">
+        <div class="aa_productdetail_box2_feeding_box" id="aa_select2">
             <div class="aa_productdetail_box2_feeding_tiite">餵食指南</div>
+            <div class="aa_productdetail_box2_feeding_tiite_mobile">Hill's 希爾思 | 泌尿道護理</div>
             <div class="aa_productdetail_box2_feeding_tiite_pink">成貓適用</div>
 
             <table class="aa_productdetail_box2_feeding_table">
@@ -1021,7 +1121,315 @@
 
                 </tr>
             </table>
+
+            <div class="aa_productdetail_box2_feeding_text1">
+                視其維持最佳體重所需斟酌調整餵食量。若不確定，可向獸醫師諮詢。 <br>
+                <br>
+                為求安全與最佳健康效益：
+                <div class="aa_productdetail_box2_feeding_text2">
+                    ‧請以七天以上時間，逐漸增加新食物並減少舊食物的方式轉換餵食。<br>
+                    ‧請僅餵食所推薦之希爾思TM處方食品乾糧與罐頭。<br>
+                    ‧請隨時提供清新飲用水。<br>
+                    ‧請獸醫師持續監控寵物的身體狀況。<br>
+                    ‧為避免發生窒息情況，請將產品塑膠袋置於寵物及小孩無法觸及之處。<br>
+                </div>
+            </div>
         </div>
+
+
+
+        <!-- 相關產品點腦版 -->
+
+        <div class="aa_productdetail_box2_recommend_box">
+            <div class="aa_productdetail_box2_recommend_title">相關產品</div>
+
+            <div class="aa_productdetail_box2_recommend_cardbox">
+                <div class="aa_productdetail_box2_recommend_card1">
+                    <div class="aa_productdetail_box2_recommend_imgbgbox">
+                        <div class="aa_productdetail_box2_recommend_imgbox">
+                            <img src="./images/productdetail/recommend1.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                        i/d泌消化系統護理</div>
+
+                    <div class="aa_productdetail_box2_recommend_btubox">
+                        <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                    </div>
+                </div>
+
+                <div class="aa_productdetail_box2_recommend_card2">
+                    <div class="aa_productdetail_box2_recommend_imgbgbox">
+                        <div class="aa_productdetail_box2_recommend_imgbox">
+                            <img src="./images/productdetail/recommend2.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                        c/d泌尿系統護理</div>
+
+                    <div class="aa_productdetail_box2_recommend_btubox">
+                        <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                    </div>
+                </div>
+
+                <div class="aa_productdetail_box2_recommend_card3">
+                    <div class="aa_productdetail_box2_recommend_imgbgbox">
+                        <div class="aa_productdetail_box2_recommend_imgbox">
+                            <img src="./images/productdetail/recommend3.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                        k/d腎臟病護理貓用配方</div>
+
+                    <div class="aa_productdetail_box2_recommend_btubox">
+                        <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                    </div>
+                </div>
+
+
+                <div class="aa_productdetail_box2_recommend_card4">
+                    <div class="aa_productdetail_box2_recommend_imgbgbox">
+                        <div class="aa_productdetail_box2_recommend_imgbox">
+                            <img src="./images/productdetail/recommend4.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                        k/d腎臟病護理</div>
+
+                    <div class="aa_productdetail_box2_recommend_btubox">
+                        <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 評價 -->
+
+
+
+        <div class="aa_productdetail_box2_evaluate_box" id="aa_select3">
+            <div class="aa_productdetail_box2_evaluate_tiite">顧客評價</div>
+            <div class="aa_productdetail_box2_feeding_tiite_mobile">Hill's 希爾思 | 泌尿道護理</div>
+            <div class="aa_productdetail_box2_evaluate_barbox">
+
+                <div class="aa_productdetail_box2_evaluate_rightbox">
+                    <div class="aa_productdetail_box2_evaluate_howMany">
+                        9 個評價
+                    </div>
+                    <div class="aa_productdetail_box2_evaluate_starbox">
+                        <div class="aa_productdetail_box2_evaluate_starimg"> <svg class="star2"
+                                id="aa_productdetail_box1_text_appraise_star">
+                                <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                            </svg>
+
+                            <svg class="star2" id="aa_productdetail_box1_text_appraise_star">
+                                <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                            </svg>
+
+                            <svg class="star2" id="aa_productdetail_box1_text_appraise_star">
+                                <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                            </svg>
+
+                            <svg class="star2" id="aa_productdetail_box1_text_appraise_star">
+                                <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                            </svg>
+
+
+                            <svg class="star2" id="aa_productdetail_box1_text_appraise_star">
+                                <use xlink:href="./images/index/icomoon/symbol-defs.svg#star2"></use>
+                            </svg>
+
+
+                        </div>
+                        <div class="aa_productdetail_box2_evaluate_startext">5.0 分 | 9 個評價</div>
+                    </div>
+                </div>
+                <div class="aa_productdetail_box2_evaluate_leftbox">
+                    <div class="aa_productdetail_box2_evaluate_five">
+                        <div class="aa_productdetail_box2_evaluate_text">5分</div>
+                        <div class="aa_productdetail_box2_evaluate_bar five"></div>
+                        <div class="aa_productdetail_box2_evaluate_percentage">100%</div>
+                    </div>
+                    <div class="aa_productdetail_box2_evaluate_four">
+
+                        <div class="aa_productdetail_box2_evaluate_text">4分</div>
+                        <div class="aa_productdetail_box2_evaluate_bar"></div>
+                        <div class="aa_productdetail_box2_evaluate_percentage">0%</div>
+
+                    </div>
+                    <div class="aa_productdetail_box2_evaluate_three">
+
+                        <div class="aa_productdetail_box2_evaluate_text">3分</div>
+                        <div class="aa_productdetail_box2_evaluate_bar"></div>
+                        <div class="aa_productdetail_box2_evaluate_percentage">0%</div>
+
+                    </div>
+                    <div class="aa_productdetail_box2_evaluate_two">
+
+                        <div class="aa_productdetail_box2_evaluate_text">2分</div>
+                        <div class="aa_productdetail_box2_evaluate_bar"></div>
+                        <div class="aa_productdetail_box2_evaluate_percentage">0%</div>
+
+
+                    </div>
+                    <div class="aa_productdetail_box2_evaluate_one">
+
+                        <div class="aa_productdetail_box2_evaluate_text">1分</div>
+                        <div class="aa_productdetail_box2_evaluate_bar"></div>
+                        <div class="aa_productdetail_box2_evaluate_percentage">0%</div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="aa_productdetail_box2_evaluate_carouselbox">
+
+
+                輪播
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- 相關產品手機版 -->
+        <div class="aa_productdetail_box2_recommend_box_mobile">
+            <div class="aa_productdetail_box2_recommend_title">相關產品</div>
+            <div class="aa_carouselbox">
+                <div class="aa_carousel" data-flickity='{ "wrapAround": true }'>
+                    <div class="aa_carousel-cell">
+
+
+                        <div class="aa_productdetail_box2_recommend_card1">
+                            <div class="aa_productdetail_box2_recommend_imgbgbox">
+                                <div class="aa_productdetail_box2_recommend_imgbox">
+                                    <img src="./images/productdetail/recommend1.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                                i/d泌消化系統護理</div>
+
+                            <div class="aa_productdetail_box2_recommend_btubox">
+                                <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="aa_carousel-cell">
+
+                        <div class="aa_productdetail_box2_recommend_card1">
+                            <div class="aa_productdetail_box2_recommend_imgbgbox">
+                                <div class="aa_productdetail_box2_recommend_imgbox">
+                                    <img src="./images/productdetail/recommend2.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                                c/d泌尿系統護理</div>
+
+                            <div class="aa_productdetail_box2_recommend_btubox">
+                                <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="aa_carousel-cell">
+
+                        <div class="aa_productdetail_box2_recommend_card1">
+                            <div class="aa_productdetail_box2_recommend_imgbgbox">
+                                <div class="aa_productdetail_box2_recommend_imgbox">
+                                    <img src="./images/productdetail/recommend3.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                                k/d腎臟病護理貓用配方</div>
+
+                            <div class="aa_productdetail_box2_recommend_btubox">
+                                <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="aa_carousel-cell">
+
+
+                        <div class="aa_productdetail_box2_recommend_card1">
+                            <div class="aa_productdetail_box2_recommend_imgbgbox">
+                                <div class="aa_productdetail_box2_recommend_imgbox">
+                                    <img src="./images/productdetail/recommend4.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="aa_productdetail_box2_recommend_text">Hill's 希爾思 <br>
+                                k/d腎臟病護理</div>
+
+                            <div class="aa_productdetail_box2_recommend_btubox">
+                                <button class="aa_productdetail_box2_recommend_btu">了解更多</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
     </div>
 
 
@@ -1189,10 +1597,26 @@
 
     <script src="./js/0_main/navbar/mobile/custom.js"></script>
     <script src="./js/0_main/navbar/web/custom.js"></script>
-    <script src="./js/QA/mobile/custom.js"></script>
-    <script src="./js/QA/web/custom.js"></script>
+    <!-- <script src="./js/productdetail/mobile/custom.js"></script>
+    <script src="./js/productdetail/web/custom.js"></script> -->
 
     <script src="./js/0_main/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+
+
+        // 怎知抓到蛇摸?????????
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $.getScript("./js/productdetail/web/custom.js");
+
+
+        } else {
+            $.getScript("./js/productdetail/mobile/custom.js");
+        }
+
+    </script>
+
+
 </body>
 
 </html>

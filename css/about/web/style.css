@@ -17,13 +17,17 @@
     }
 
     .aa_about_titile{
+width: fit-content;
 
-      width: 620px;
-      height: 130px;
+    
       margin: 0 auto;
-      background-color: #FF9A9A;
+      
       margin-top: 170px;
       margin-bottom: 125px;
+    }
+
+    .aa_about_titile_mobile{
+      display: none;
     }
 
 .aa_about_bigbox{
