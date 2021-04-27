@@ -14,6 +14,9 @@
     border: 1px red solid !important;
 } */
 
+body{
+    background-color: #F7F4EE !important;
+}
 
 .aa_navbar_box{
     width: 100px;
@@ -36,32 +39,58 @@
 .aa_productdetail_box1_img_sm-web{
     width: 115px;
     float: left;
+   
     
     
 }
 .aa_productdetail_box1_img_big-web{
     float: left;
     margin-left: 40px;
-    
-   
+    width: 578px;
+   height: 578px;
 }
 
 
 .aa_productdetail_box1_img_bigimg1-web{
     border-radius: 5px;
+    width: 100%;
     
 
 }
-
+.aa_productdetail_box1_img_bigimg2-web{
+    border-radius: 5px;
+    width: 100%;
+    display: none;
+}
 
 .aa_productdetail_box1_img_smimg1-web{
-width: 100%;
-border: 3px solid #CCCCCC;
+
+width: 116px;
+height: 116px;
 border-radius: 8px;
 margin-bottom: 18px;
+border: 3px solid #CCCCCC;
+background-color: #fff;
+cursor: pointer;
+}
+.aa_productdetail_box1_img_smimg1_img{
+    width: 90%;
+    height: 90%;
+   margin-left: 6px;
+   margin-top: 5px;
+   cursor: pointer;
+ 
 }
 .aa_productdetail_box1_img_smimg2-web{
-    width: 100%;
+    width: 116px;
+    height: 116px;
+    border-radius: 8px;
+}
+.aa_productdetail_box1_img_smimg2_img{
+    width: 90%;
+    height: 90%;
+   margin-left: 6px;
+   margin-top: 5px;
 }
 
 .aa_productdetail_box1_img_mobile{
@@ -107,7 +136,7 @@ margin-bottom: 18px;
     width: 5px;
     height: 24px;
     float: left;
-   background-color: var(--maindarkgray);
+   background-color: var(--maingray);
     margin-right: 10px;
 }
 .aa_productdetail_box1_text_text{
@@ -608,7 +637,8 @@ width: 100%;
   .aa_productdetail_box2_evaluate_box{
      width: 100%;
      margin-top:170px; 
-     height: auto;
+     height: 350px;
+   
   }
   .aa_productdetail_box2_evaluate_tiite{
     font-size: 30px;
@@ -665,7 +695,149 @@ font-size: 48px;
 
 /*  評價倫波 */
 
+/* 手機評價倫波 */
+.aa_productdetail_box2_evaluation_box_mobile{
+height: 500px;
+ 
+  }
+  
+  .aa_carousel2 {
+    background: rgba(238, 238, 238, 0);
+  }
+  
+  .aa_carousel-cell2 {
+    width: 383px;
+    height: 297px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 10px;
+    counter-increment: carousel-cell;
+    
+  }
+  
+  /* cell number */
+  /* .aa_carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  } */
+  
+  /* ???????????????????????????????????????????????????? */
+  .flickity-button{
+    /* display: none; */
+   
+  }
+  
+  .flickity-page-dots{
+    display: none;
+  }
+  .flickity-prev-next-button.next{
+   float: right;
+    right: -100px !important;
+    
+    background-color: transparent;
+
+  }
+
+  .flickity-prev-next-button.previous{
+    background-color: transparent;
+  
+    
+
+  }
+ 
+  
+  .flickity-slider{
+    width: 1400px !important;
+    left: -80px!important;
+  }
+  .flickity-viewport{
+      width: 1240px;
+    
+     left: 160px;
+
+
+     
+  }
+
 
   
+
+  .flickity-enabled.is-draggable{
+      right: 60px;
   }
+  
+  .carousel-cell_wrap {
+    display: flex;
+  }
+  
+  .star2 {
+    width: 12px;
+    height: 12px;
+    fill: var(--mainyellow);
+  
+  }
+  
+  .n_carousel_avatar1 {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .n_carousel_avatar1 img {
+    width: 100%;
+  }
+  
+  .n_star2_wrap {
+    height: 30px;
+    margin-left: 20px;
+  }
+  
+  .n_carousel_name {
+    font-size: 14px;
+  
+    margin-top: 30px;
+    
+  }
+  
+  .n_carousel_comment {
+    height: 44px;
+    width: 305px;
+  margin: 0 auto;
+  margin-top: 35px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+  }
+  
+  .n_carousel_comment_pc{
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+    margin-left: 35px;
+    float: left;
+  }
+  .n_carousel_comment_pc img{
+    width: 100%;
+  }
+  .n_carousel_comment_day{
+    float: right;
+    margin-top: 60px;
+    margin-right:40px ;
+    font-size: 12px;
+  }
+
+
+
+
+  /* 電腦版方品讀 */
+
+    }
 
