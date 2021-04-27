@@ -10,9 +10,9 @@
 
   @media (min-width: 375px)and (max-width: 1127px) {
 
-/* *{
+*{
     border: 1px red solid !important;
-} */
+}
 
 
 
@@ -223,6 +223,7 @@ input.qtyminus {
  height: 5px;
  border-radius: 50px;
  margin-bottom: -10px;
+ margin-top: 18px;
 
 }
 
@@ -298,6 +299,7 @@ width: 100%;
 
 .aa_productdetail_box2_top_select1{
   border-bottom: 5px solid var(--mainyellow);
+
 }
 /* 商品描述 */
 .aa_productdetail_box2_top_detailed_box{
@@ -565,6 +567,7 @@ body { font-family: sans-serif; }
   color: white;
 } */
 
+/* ???????????????????????????????????????????????????? */
 .flickity-button{
   display: none;
 }
@@ -594,7 +597,7 @@ body { font-family: sans-serif; }
 
 }
 .aa_productdetail_box2_recommend_imgbox{
-  width: 140px;
+  width: 120px;
   height: auto;
   margin: 0 auto;
   line-height: 19vh;
@@ -621,7 +624,7 @@ width: 100%;
 }
 .aa_productdetail_box2_recommend_btu{
     width: 148px;
-    height: 41px;
+    height: 35px;
     border: 0;
     border-radius: 20px;
     background-color: #F9DD83;
@@ -686,6 +689,206 @@ width: 100%;
       margin-top: 90px;
       background-color: #FF9A9A;
   }
-  
+  .n_carousel_avatar11{
+    width: 60px;
+    height: 60px;
+}
+.n_carousel_avatar11 img{
+    width: 100%;
+    height: 100%;
+}
+.n_carousel_nameWrap{
+    margin-left: 20px;
+}
+.n_carousel_name{
+   font-size: 16px;
+}
+.n_walking_location{
+ margin-left: 35px;
+ font-size: 14px;
+}
 
+.n_walkerScore{
+font-size: 12px;
+margin-top: -1px;
+margin-left: 10px;
+
+}
+.n_starWrap{
+display: flex;
+}
+
+
+.carousel {
+background: #EEE;
+}
+
+.carousel-cell {
+width: 66%;
+height: 200px;
+margin-right: 10px;
+background: #8C8;
+border-radius: 5px;
+counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+display: block;
+text-align: center;
+content: counter(carousel-cell);
+line-height: 200px;
+font-size: 80px;
+color: white;
+}
+.flickity-enabled.is-draggable{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.flickity-page-dots{
+display: none;
+}
+.flickity-prev-next-button .flickity-button-icon,.flickity-prev-next-button.next,.flickity-prev-next-button.previous{
+display: none;
+}
+.carousel-cell{
+background: transparent;
+}
+
+.n_walkactivity01{
+width: 100%;
+height: 150px;
+}
+.n_walkactivity01 img{
+width: 100%;
+}
+.carousel-cell:before{
+display: none;
+}
+
+.n_walkerIntro{
+font-size: 16px;
+font-weight: 500;  
+margin-left: 42px;
+margin-bottom:40px; 
+}
+
+.n_walkerIntroText{
+width: 290px;
+margin: 0 auto;
+font-size: 14px;
+line-height: 1.8;
+letter-spacing: 1.5px;
+}
+
+.n_walkerIntroText_server{
+margin-top: 50px;
+
+}
+
+
+/* 評價倫波 */
+.aa_productdetail_box2_evaluation_box_mobile{
+
+  margin-top:68px;
+  margin-bottom: 100px;
+}
+
+.aa_carousel2 {
+  background: rgba(238, 238, 238, 0);
+}
+
+.aa_carousel-cell2 {
+  width: 228px;
+  height: 335px;
+  margin-right: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  
+}
+
+/* cell number */
+/* .aa_carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+
+/* ???????????????????????????????????????????????????? */
+.flickity-button{
+  display: none;
+}
+
+.flickity-page-dots{
+  display: none;
+}
+
+.flickity-slider{
+  width: 400px !important;
+}
+
+.carousel-cell_wrap {
+  display: flex;
+}
+
+.star2 {
+  width: 10px;
+  height: 10px;
+  fill: var(--mainyellow);
+
+}
+
+.n_carousel_avatar1 {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.n_carousel_avatar1 img {
+  width: 100%;
+}
+
+.n_star2_wrap {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.n_carousel_name {
+  font-size: 10px;
+
+  margin-top: 20px;
+}
+
+.n_carousel_comment {
+  height: 100px;
+  width: 200px;
+margin: 0 auto;
+margin-top: 50px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.n_carousel_comment_pc{
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 10px;
+  
+  margin-left: 13px;
+  float: left;
+}
+.n_carousel_comment_pc img{
+  width: 100%;
+}
+.n_carousel_comment_day{
+  float: left;
+  margin-top: 40px;
+  margin-left:40px ;
+  font-size: 12px;
+}
   }

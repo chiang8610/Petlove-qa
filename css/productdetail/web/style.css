@@ -158,38 +158,38 @@ color: var(--maindarkgray);
 
 
 .aa_productdetail_box1_text_btn{
-    width: 550px;
+    width: 500px;
     margin-top: 27px;
     position: relative;
     
 }
 
 .aa_productdetail_box1_text_btnJoin{
-   width: 265px;
-   height: 50px;
+   width: 235px;
+   height: 40px;
    border-radius: 10px;
    background-color: var(--mainyellow);
    color: var(--maindarkgray);
-   font-size: 22px;   
+   font-size: 18px;   
    letter-spacing:2px;border: 0;
    
  
 }
 .aa_productdetail_box1_text_btnLove{
-    width: 265px;
-   height: 50px;
+    width: 235px;
+   height: 40px;
    position: absolute;
    right: 0;
    border-radius: 10px;
    background-color: var(--mainyellow);
    color: var(--maindarkgray);
-   font-size: 22px;   
+   font-size: 18px;   
    letter-spacing:2px;border: 0;
    
 }
 /* 數量選擇 */
 .aa_productdetail_box1_text_updown{
-    width: 550px;
+    width: 500px;
     height: 50px;
     
     
@@ -252,11 +252,12 @@ color: var(--maindarkgray);
     display: flex;
     justify-content: space-around;
     height: 50px;
+    cursor: pointer;
 }
 .aa_productdetail_box2_top_select1{
 
     border-bottom: 5px solid  var(--mainyellow);
-
+    
 }
 
 .aa_productdetail_box2_top_select_line{
@@ -459,8 +460,7 @@ width: fit-content;
 
 .aa_productdetail_box2_feeding_table tr{
     height: 50px;
- 
-
+margin-right: 10px;
   
  
 }
@@ -468,7 +468,6 @@ width: fit-content;
 .aa_productdetail_box2_feeding_table td{
     width: 350px;
     vertical-align:middle ;
-   
     border-radius: 10px;
     
     
@@ -476,10 +475,10 @@ width: fit-content;
     
 }
 
-
 .aa_darkgray{
     background-color: var(--maindarkgray);
     color: #ffffff;
+    
    
 }
 
@@ -557,16 +556,16 @@ letter-spacing: 2px;
 
 
 .aa_productdetail_box2_recommend_imgbgbox{
-    width: 296px;
-    height: 296px;
+    width: 256px;
+    height: 256px;
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 27px;
 
 }
 .aa_productdetail_box2_recommend_imgbox{
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     line-height: 30vh;
     
@@ -613,12 +612,11 @@ width: 100%;
   }
   .aa_productdetail_box2_evaluate_tiite{
     font-size: 30px;
-    width: fit-content;
     margin: 0 auto;
-    font-weight: bold;
-    color: var(--maindarkgray);
-    letter-spacing:0.8px;
-    margin-bottom: 120px;
+    width: fit-content;
+    
+    border-bottom: 7px solid var(--mainblue);
+    margin-bottom: 55px;
 
   }
 
@@ -655,17 +653,17 @@ width: 100%;
 
 
 
-.aa_productdetail_box2_evaluate_carouselbox{
+/* .aa_productdetail_box2_evaluate_carouselbox{
 font-size: 48px;
    height: 383px;
     margin: 0 auto;
     margin-top: 300px;
     background-color: #FF9A9A;
-}
+} */
 
 
 
-
+/*  評價倫波 */
 
 
   

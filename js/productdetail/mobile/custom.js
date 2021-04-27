@@ -80,6 +80,7 @@ $(".aa_productdetail_box2_top_select2").on("click", function () {
 
   $('.aa_productdetail_box2_evaluate_box').css('display', 'none');
 
+
 })
 
 
@@ -94,8 +95,11 @@ $(".aa_productdetail_box2_top_select3").on("click", function () {
 
   $('.aa_productdetail_box2_evaluate_box').css('display', 'block');
 
+
+
   $('.aa_productdetail_box2_top_detailed_box').css('display', 'none');
 
   $('.aa_productdetail_box2_feeding_box').css('display', 'none');
+
 
 })
