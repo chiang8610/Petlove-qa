@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
+    <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
+    <link rel="stylesheet" href="./css/productdetail/web/style.css">
+    <link rel="stylesheet" href="./css/productdetail/mobile/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        /* * {
+            border: 2px solid rebeccapurple !important;
+
+        } */
+        body {
+            background-color: #F7F4EE;
+
+            font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+
+        }
+
+        .accordion {
+
+            width: fit-content;
+
+        }
+
+        .btn.btn-link.collapsed {
+            border: 0;
+        }
+
+
+
+        .card-body {
+            padding: 0;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 0;
+
+
+        }
+
+        .btn .btn-link {
+            text-align: center !important;
+            line-height: 50px !important;
+            width: fit-content;
+
+            background-color: transparent;
+
+
+        }
+
+        .card-header {
+
+            background-color: transparent;
+            padding: 0;
+            border: 0;
+
+        }
+
+        .mb-0 {
+            margin: 0;
+
+
+        }
+
+        .btn-link:hover,
+        .btn-link:focus {
+            color: #89A7C2;
+            text-decoration: none;
+            border: 0;
+
+
+        }
+
+
+
+        /* 每一層設定 */
+        .twofloor {
+            margin-left: 80px;
+            padding: 0 !important;
+            margin-right: 80px;
+            font-weight: normal;
+            font-size: 18px;
+            color: #89A7C2;
+        }
+
+        .threefloor {
+            margin-left: 150px;
+            padding: 0 !important;
+            margin-right: 50px;
+            font-weight: normal;
+            color: #89A7C2;
+        }
+
+        .onefloor {
+            border-bottom: 1px solid #89A7C2;
+            font-size: 24px;
+            color: #89A7C2;
+        }
+
+
+
+
+        /* 本月主打活動 其他商品 的字 */
+        .aa_leftnaverber_box1_text {
+            margin-bottom: 10PX;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+
+        .aa_leftnaverber_box4_text {
+            margin-bottom: 10PX;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* 價錢範圍 */
+        .aa_leftnaverber_box2 {
+            width: 72px;
+            height: 85px;
+        }
+
+
+
+        /* 展開中 */
+        .collapsing {
+            background-color: rgb(255, 255, 255);
+            width: fit-content;
+            border-radius: 10px;
+            margin-top: 10px;
+
+
+        }
+
+        /* 展開完成 */
+        .collapse.in {
+            background-color: rgb(255, 255, 255);
+            width: fit-content;
+            border-radius: 10px;
+            margin-top: 10px;
+
+        }
+
+        .btn:focus,
+
+        .btn:active:focus,
+
+        .btn.active:focus,
+
+        .btn.focus,
+
+        .btn:active.focus,
+
+        .btn.active.focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .btn {
+            transition: none
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- <div class="containers">
+        <div class="row">
+            <div class="accordion" id="accordionExample">
+                第一層1-1
+
+
+
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                本月主打活動 1
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+
+                            第二層
+                            
+                            <div class="aa_leftnaverber_box1 twofloor">
+                                <div class="aa_leftnaverber_box1_text1">熱銷推薦</div>
+                                <div class="aa_leftnaverber_box1_text2">獨家折扣</div>
+                                <div class="aa_leftnaverber_box1_text3">超殺特惠</div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- 第一層1-1 -->
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed onefloor" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        本月主打活動1
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+
+
+
+                    <!-- 第二層 -->
+
+                    <div class="aa_leftnaverber_box1 twofloor">
+                        <div class="aa_leftnaverber_box1_text text1">熱銷推薦</div>
+                        <div class="aa_leftnaverber_box1_text text2">獨家折扣</div>
+                        <div class="aa_leftnaverber_box1_text text3">超殺特惠</div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 第一層1-2 -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed onefloor" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        價格篩選
+                        2
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+
+
+
+                    <div class="aa_leftnaverber_box2 twofloor">
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- 第一層1-3 -->
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed onefloor" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        所有商品3
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+
+
+
+
+
+                    <!-- 第二層 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed twofloor" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    &nbsp;&nbsp;狗狗5&nbsp;&nbsp;
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingSeven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseSeven"
+                                                aria-expanded="false" aria-controls="collapseSeven">
+                                                乾糧7
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingEight">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                                保健8
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingNine">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                                                aria-controls="collapseNine">
+                                                罐頭9
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseTen" aria-expanded="false"
+                                                aria-controls="collapseTen">
+                                                零食10
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingEleven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseEleven"
+                                                aria-expanded="false" aria-controls="collapseEleven">
+                                                罐頭11
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 第二層 -->
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed twofloor" type="button" data-toggle="collapse"
+                                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    &nbsp;&nbsp;貓貓6&nbsp;&nbsp;
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwelve">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwelve"
+                                                aria-expanded="false" aria-controls="collapseTwelve">
+                                                乾糧12
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThirteen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseThirteen"
+                                                aria-expanded="false" aria-controls="collapseThirteen">
+                                                保健13
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFourteen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseFourteen"
+                                                aria-expanded="false" aria-controls="collapseFourteen">
+                                                罐頭14
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingFifteen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseFifteen"
+                                                aria-expanded="false" aria-controls="collapseFifteen">
+                                                零食15
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <!-- 第三層 -->
+                                <div class="card">
+                                    <div class="card-header" id="headingSixteen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed threefloor" type="button"
+                                                data-toggle="collapse" data-target="#collapseSixteen"
+                                                aria-expanded="false" aria-controls="collapseSixteen">
+                                                罐頭16
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseESixteen" class="collapse" aria-labelledby="headingSixteen"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 第一層1-4 -->
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed onefloor" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        其他商品 4
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+
+
+
+
+                    <!-- 第二層 -->
+
+                    <div class="aa_leftnaverber_box1 twofloor">
+                        <div class="aa_leftnaverber_box4_text text1">居家用品 </div>
+                        <div class="aa_leftnaverber_box4_text text2">食具/水具 </div>
+                        <div class="aa_leftnaverber_box4_text text3">外出用品 </div>
+                        <div class="aa_leftnaverber_box4_text text4">清潔用品 </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/0_main/navbar/mobile/custom.js"></script>
+    <script src="./js/0_main/navbar/web/custom.js"></script>
+
+    <script>
+        $('.panel-collapse').on('show.bs.collapse', function () {
+            $(this).siblings('.panel-heading').addClass('active');
+
+        });
+
+        $('.panel-collapse').on('hide.bs.collapse', function () {
+            $(this).siblings('.panel-heading').removeClass('active');
+        });
+    </script>
+</body>
+
+</html>

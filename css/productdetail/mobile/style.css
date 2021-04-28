@@ -10,10 +10,12 @@
 
   @media (min-width: 375px)and (max-width: 1127px) {
 
-*{
+/* *{
     border: 1px red solid !important;
+} */
+body{
+  background-color: #F7F4EE !important;
 }
-
 
 
     .aa_navbar_box{
@@ -35,7 +37,7 @@
 
 
 .aa_productdetail_box1_text_title{
-  margin-top: 27px;
+  margin-top: 38px;
   font-size: 16px;
   line-height: 3vh;
   margin-left: 10px;
@@ -58,6 +60,7 @@
 margin-top: 2px;
 margin-right: 5px;
 fill: #F9DD83;
+
 }
 
 .aa_productdetail_box1_text_appraise{
@@ -218,25 +221,48 @@ input.qtyminus {
 
 /* 用bootstrap作，會重複??? */
 /* 手機板商品圖 */
-.carousel-indicators li{
- width: 5px;
- height: 5px;
- border-radius: 50px;
- margin-bottom: -10px;
- margin-top: 18px;
+ .aa_productdetail_box1_img_mobile{
+width: 303px;
+height:  303px;
 
+background-color: #fff;
+ }
+.carousel.slide{
+  width: 280px;
+  height: 280px;
+
+  margin: 0 auto;
+  margin-top: 10px;
 }
+.carousel-indicators li{
+ width: 10px !important;
+ height: 10px;
+ border-radius: 10px;
+ 
+
+ margin-right: 10px!important;
+ background-color: #89A7C2 !important;
+}
+
 
 .carousel-indicators{
-  display:inline-block;
+  /* display:inline-block;
   position: absolute;
-  left: 260px;
-  top: 240px;
-  background-color: white;
+  left: 500px;
+  top: 240px; */
+  /* position: absolute !important; */
+  
+
+  bottom: -45px !important;
 
 }
-.carousel-indicators .active {
-  background-color: #89A7C2;
+.carousel-indicators.active{
+
+}
+
+.carousel-item img{
+
+ 
 }
 
 .carousel-control-next-icon{
@@ -720,7 +746,7 @@ display: flex;
 
 
 .carousel {
-background: #EEE;
+background: rgb(255, 255, 255);
 }
 
 .carousel-cell {
