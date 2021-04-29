@@ -283,11 +283,7 @@ color: var(--maindarkgray);
     height: 50px;
     cursor: pointer;
 }
-.aa_productdetail_box2_top_select1{
 
-    border-bottom: 5px solid  var(--mainyellow);
-    
-}
 
 .aa_productdetail_box2_top_select_line{
     width: 100%;
@@ -707,7 +703,7 @@ height: 500px;
   
   .aa_carousel-cell2 {
     width: 383px;
-    height: 297px;
+    height: 280px;
     margin-right: 20px;
     background-color: rgb(255, 255, 255) ;
     border-radius: 10px;
@@ -820,9 +816,10 @@ height: 500px;
     height: 75px;
     overflow: hidden;
     border-radius: 10px;
-    
     margin-left: 35px;
     float: left;
+
+    
   }
   .n_carousel_comment_pc img{
     width: 100%;

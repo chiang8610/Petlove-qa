@@ -47,7 +47,7 @@ $(".aa_productdetail_box2_top_select1").on("click", function () {
   // $('.aa_productdetail_box2_top_select2').css('border-bottom', '0')
   // $('.aa_productdetail_box2_top_select3').css('border-bottom', '0')
 
-  $('html,body').animate({ scrollTop: $("#test").offset().top }, 1000);
+  $('html,body').animate({ scrollTop: $("#aa_select1").offset().top }, 1000);
 
 })
 
